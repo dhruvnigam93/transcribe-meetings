@@ -45,7 +45,7 @@ class Transcriber:
         result = self.model.transcribe(
             str(audio_path),
             language=language,
-            fp16=False,  # Use fp32 for better accuracy
+            fp16=False,  # Important: MPS doesn't fully support fp16
             verbose=False,  # Reduced verbosity for cleaner logs
         )
 

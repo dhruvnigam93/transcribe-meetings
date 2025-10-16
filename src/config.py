@@ -16,9 +16,7 @@ class Config(BaseModel):
 
     # Whisper settings
     whisper_model: str = Field(default="large-v3")
-    whisper_device: str = Field(
-        default="cpu"
-    )  # Using CPU for stability (MPS has compatibility issues)
+    whisper_device: str = Field(default="mps")
 
     # Databricks/Claude settings
     databricks_token: str
