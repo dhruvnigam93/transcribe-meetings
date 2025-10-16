@@ -25,7 +25,7 @@ Transform your meeting recordings into structured summaries with topics, key dec
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/dhruvnigam93/transcribe-meetings.git
 cd transcribe-meetings
 
 # Install dependencies
